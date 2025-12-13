@@ -3,7 +3,7 @@ import axios from "axios";
 const API_BASE = "http://localhost:5000/api";
 
 export const api = axios.create({
-  baseURL: "https://expense-tracker-ml.onrender.com"
+  baseURL: "https://expense-tracker-ml.onrender.com/api"
 });
 
 export const setAuthToken = (token) => {
