@@ -1,0 +1,185 @@
+/* === GLOBAL === */
+body {
+  background: #e7f4ff;
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  transition: 0.3s;
+}
+
+/* NIGHT MODE */
+.dashboard.dark {
+  background: #0d1b2a;
+  color: #e0e0e0;
+}
+
+.dashboard.dark .card {
+  background: #1b263b;
+  border-color: #415a77;
+}
+
+.dashboard.dark .input-box,
+.dashboard.dark select {
+  background: #162232;
+  color: #fff;
+  border-color: #415a77;
+}
+
+.dashboard.dark .submit-btn {
+  background: #2ec27e;
+}
+
+.dashboard.dark .voice-btn {
+  background: #203447;
+  color: #fff;
+}
+
+/* === MAIN CONTAINER === */
+.dashboard {
+  max-width: 850px;
+  margin: 2rem auto;
+  padding: 10px;
+}
+
+/* === HEADER === */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.toggle-btn,
+.logout-btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #b8e0ff;
+  background: #e6f6ff;
+  transition: 0.2s ease;
+}
+
+.toggle-btn:hover,
+.logout-btn:hover {
+  background: #d0eeff;
+}
+
+/* === CARD === */
+.card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #b7e5d0;
+  margin-top: 20px;
+  animation: fadeIn 0.4s ease;
+}
+
+/* Animations */
+.animate {
+  animation: slideUp 0.4s ease;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === FORM === */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-box {
+  padding: 12px;
+  border: 1px solid #b8e0ff;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.input-box:focus {
+  border-color: #5da9ff;
+  box-shadow: 0 0 4px #5da9ff;
+}
+
+.submit-btn {
+  padding: 12px;
+  background: #4cd47b;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  background: #34c46a;
+}
+
+.voice-btn {
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #b8e0ff;
+  background: #e6f6ff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.voice-btn:hover {
+  background: #cfeeff;
+}
+
+/* === EXPENSE LIST === */
+.expense-list {
+  list-style: none;
+  padding: 0;
+}
+
+.expense-item {
+  background: #ffffff;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border-left: 6px solid #4cd47b;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.expense-item:hover {
+  transform: translateX(6px);
+  background: #f0fffa;
+}
+
+.expense-amount {
+  font-size: 18px;
+  font-weight: bold;
+  color: #004e64;
+}
+
+.expense-category {
+  font-size: 14px;
+  color: #2a8c82;
+}
+
+.expense-note {
+  font-size: 14px;
+  color: #555;
+}
+
+.expense-date {
+  font-size: 13px;
+  color: #666;
+}
+
+.error-text {
+  color: red;
+  margin-top: 10px;
+}

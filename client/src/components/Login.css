@@ -1,0 +1,127 @@
+/* PAGE BACKGROUND */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#e7f4ff, #dfffee);
+  padding: 20px;
+  transition: 0.3s;
+}
+
+/* CARD */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #b7e5d0;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.5s ease;
+}
+
+/* Animations */
+.animate {
+  animation: slideUp 0.4s ease;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* TITLES */
+.title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #004e64;
+  font-weight: 600;
+}
+
+/* FORM */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input-box {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #b8e0ff;
+  background: #f9fcff;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.input-box:focus {
+  border-color: #5da9ff;
+  box-shadow: 0 0 5px #5da9ff;
+  background: white;
+}
+
+/* BUTTONS */
+.submit-btn {
+  padding: 12px;
+  background: #4cd47b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  background: #3cc56e;
+}
+
+/* SWITCH BUTTON */
+.switch-btn {
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+  background: #e6f6ff;
+  border: 1px solid #b8e0ff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.switch-btn:hover {
+  background: #d2efff;
+}
+
+/* ERROR TEXT */
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: -5px;
+  text-align: left;
+}
+
+/* NIGHT MODE SUPPORT (same theme as dashboard) */
+.dashboard.dark ~ .login-container,
+.login-container.dark {
+  background: #0d1b2a;
+}
+
+.login-container.dark .login-card {
+  background: #1b263b;
+  border-color: #415a77;
+  color: #e0e0e0;
+}
+
+.login-container.dark .input-box {
+  background: #162232;
+  border-color: #415a77;
+  color: white;
+}
+
+.login-container.dark .switch-btn {
+  background: #203447;
+  color: white;
+}
