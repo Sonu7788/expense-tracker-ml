@@ -1,28 +1,28 @@
-# 🚀 Expense Tracker with Voice Input & ML Predictions  
+#  Expense Tracker with Voice Input & ML Predictions  
 A smart **full-stack Expense Tracker** built using **MERN + FastAPI ML microservice**.  
 Users can add expenses manually or through **voice commands**, view history, and get **next-month spending predictions** using a machine learning model.
 
 ---
 
-## 🌟 Features
+##  Features
 
-### 🔐 Authentication
+###  Authentication
 - Secure JWT-based login & register  
 - Protected user routes  
 
-### 💸 Expense Tracking
+###  Expense Tracking
 - Add expenses (amount, category, note)  
 - Voice input for hands-free use  
 - Real-time UI updates  
 - Recent expenses list  
 
-### 🤖 Machine Learning Suggestions
+###  Machine Learning Suggestions
 - Predicts next month’s spending  
 - Suggests safe budget  
 - Shows current month total  
 - Detects trends and gives tips  
 
-### 🎨 UI/UX
+###  UI/UX
 - Clean design  
 - Light & Night mode  
 - Soft blue-green theme  
@@ -30,7 +30,7 @@ Users can add expenses manually or through **voice commands**, view history, and
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### Frontend (React)
 - React.js  
@@ -56,7 +56,7 @@ Users can add expenses manually or through **voice commands**, view history, and
 
 ---
 
-## 🚀 2️⃣ Setup Backend (Express)
+##  2️ Setup Backend (Express)
 
 
 Create `.env`:
